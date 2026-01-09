@@ -1,6 +1,6 @@
 # Badalona Sostenible 🌱
 
-Proyecto web realizado para el CFGS de Informática – Lenguaje de Marcas  
+Proyecto web realizado para el CFGS de Informática – Sostenibilidad  
 IES La Ferreria – Curso 2025/2026
 
 ## 📌 Descripción
