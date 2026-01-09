@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto | Badalona Sostenible</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<!--CABECERA  -->
+<header class="header-principal">
+
+    <div class="header-contenido">
+        <img src="img/header/Escut_de_badalona.png"
+             alt="Escudo de Badalona"
+             class="logo">
+
+        <div class="titulo-header">
+             <h1>Contacto y Denuncias Medioambientales</h1>
+             <p>Ajuntament de Badalona</p>
+        </div>
+    </div>
+
+</header>
+
+<!-- MENÚ -->
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="medidas.html">Medidas</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="consejos.html">Consejos</a></li>
+        <li><a href="ue_agenda2030.html">Agenda 2030</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<!-- CONTENIDO PRINCIPAL -->
+<main>
+
+    <!-- DATOS DE CONTACTO -->
+    <section>
+        <h2>Datos de contacto</h2>
+
+        <!-- Tabla vertical -->
+        <table>
+            <tr>
+                <th>Entidad</th>
+                <td>Ajuntament de Badalona</td>
+            </tr>
+            <tr>
+                <th>Teléfono</th>
+                <td>934 832 600</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>mediambient@badalona.cat</td>
+            </tr>
+            <tr>
+                <th>Dirección</th>
+                <td>Plaça de la Vila, 1 - Badalona</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- HORARIO (TABLA HORIZONTAL)  -->
+    <section>
+        <h2>Horario de atención</h2>
+
+        <table>
+            <tr>
+                <th>Día</th>
+                <th>Horario</th>
+            </tr>
+            <tr>
+                <td>Lunes a Viernes</td>
+                <td>09:00 - 14:00</td>
+            </tr>
+        </table>
+    </section>
+
+    <!--  MAPA -->
+    <section>
+        <h2>Ubicación del Ayuntamiento</h2>
+
+        <!-- Google Maps -->
+        <iframe 
+            src="https://www.google.com/maps?q=Ajuntament+de+Badalona&output=embed"
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen 
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- FORMULARIO DE DENUNCIAS -->
+    <section id="denuncias">
+        <h2>Formulario de denuncia ambiental</h2>
+
+        <p>
+            Utiliza este formulario para comunicar actividades que puedan perjudicar
+            el medio ambiente en Badalona.
+        </p>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="zona">Zona afectada:</label>
+            <select id="zona" name="zona">
+                <option>Centro</option>
+                <option>Gorg</option>
+                <option>Llefià</option>
+                <option>La Salut</option>
+                <option>Pompeu Fabra</option>
+            </select>
+
+            <label for="mensaje">Descripción de la incidencia:</label>
+            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+
+            <label for="archivo">Adjuntar imagen o archivo:</label>
+            <input type="file" id="archivo" name="archivo">
+
+            <input type="submit" value="Enviar denuncia">
+        </form>
+    </section>
+
+</main>
+
+<!-- PIE DE PÁGINA -->
+<footer>
+    <p>&copy; 2026 Ayuntamiento de Badalona</p>
+    <p>
+        <a href="https://www.badalona.cat" target="_blank">
+            Web oficial del Ayuntamiento
+        </a>
+    </p>
+</footer>
+
+</body>
+</html>
