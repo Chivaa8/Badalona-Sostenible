@@ -1,147 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Badalona Sostenible | Ayuntamiento de Badalona</title>
-  <link rel="stylesheet" href="css/estilos.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badalona Sostenible | Ayuntamiento de Badalona</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
 
-<body id="top">
+  <body id="top">
+    <!-- CABECERA -->
+    <header class="header-principal">
+      <div class="header-contenido">
+        <img
+          src="img/header/Escut_de_badalona.png"
+          alt="Escudo de Badalona"
+          class="logo"
+        />
 
-<!-- CABECERA -->
-<header class="header-principal">
-  <div class="header-contenido">
-    <img src="img/header/Escut_de_badalona.png" alt="Escudo de Badalona" class="logo">
+        <div class="titulo-header">
+          <h1>Badalona Sostenible</h1>
+          <p>Comprometidos con el medio ambiente y la Agenda 2030</p>
+        </div>
+      </div>
+    </header>
 
-    <div class="titulo-header">
-      <h1>Badalona Sostenible</h1>
-      <p>Comprometidos con el medio ambiente y la Agenda 2030</p>
-    </div>
-  </div>
-</header>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="medidas.html">Medidas Medioambientales</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="consejos.html">Consejos</a></li>
+        <li><a href="ue_agenda2030.html">Agenda 2030</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
 
-<!-- MENÚ DE NAVEGACIÓN -->
-<nav>
-  <ul>
-    <li><a class="active" href="index.html">Inicio</a></li>
-    <li><a href="medidas.html">Medidas Medioambientales</a></li>
-    <li><a href="galeria.html">Galería</a></li>
-    <li><a href="consejos.html">Consejos</a></li>
-    <li><a href="ue_agenda2030.html">Agenda 2030</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
-  </ul>
-</nav>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <!-- ANCLAS -->
+      <section class="accesos-rapidos">
+        <h2>Accesos rápidos</h2>
+        <ul>
+          <li><a href="#noticias">Noticias ambientales</a></li>
+          <li><a href="#eventos">Eventos próximos</a></li>
+          <li><a href="#educacion">Educación ambiental</a></li>
+        </ul>
+      </section>
 
-<!-- CONTENIDO PRINCIPAL -->
-<main>
+      <!-- NOTICIAS -->
+      <section id="noticias">
+        <h2>Noticias Medioambientales en Badalona</h2>
 
-  <!-- ANCLAS -->
-  <section class="accesos-rapidos">
-    <h2>Accesos rápidos</h2>
-    <ul>
-      <li><a href="#noticias">Noticias ambientales</a></li>
-      <li><a href="#eventos">Eventos próximos</a></li>
-      <li><a href="#educacion">Educación ambiental</a></li>
-    </ul>
-  </section>
+        <div class="grid-cards">
+          <article class="card">
+            <span class="tag">Urbanismo verde</span>
 
-  <!-- NOTICIAS -->
-  <section id="noticias">
-    <h2>Noticias Medioambientales en Badalona</h2>
+            <h3>Ampliación y mejora de las zonas verdes urbanas</h3>
 
-    <div class="grid-cards">
-      <article class="card">
-        <span class="tag">Urbanismo verde</span>
-        <h3>Ampliación de zonas verdes urbanas</h3>
+            <p>
+              El Ayuntamiento de Badalona impulsa actuaciones de urbanismo verde
+              para mejorar la calidad ambiental de la ciudad y hacer frente a
+              los efectos del cambio climático.
+            </p>
+
+            <p>
+              Estas iniciativas incluyen la mejora de parques urbanos, el
+              aumento del arbolado en calles y plazas y la recuperación de
+              espacios públicos para convertirlos en entornos más saludables y
+              accesibles.
+            </p>
+
+            <blockquote>
+              “Una ciudad con más espacios verdes es una ciudad más saludable,
+              resiliente y preparada para el futuro”
+            </blockquote>
+          </article>
+
+          <article class="card">
+            <span class="tag">Reciclaje</span>
+
+            <h3>Refuerzo de la recogida selectiva y puntos de reciclaje</h3>
+
+            <p>
+              El Ayuntamiento de Badalona continúa reforzando el sistema de
+              recogida selectiva con el objetivo de facilitar la separación de
+              residuos y mejorar la gestión sostenible de los mismos.
+            </p>
+
+            <p>
+              Las actuaciones incluyen la mejora de los puntos de reciclaje, la
+              optimización de la recogida de residuos y campañas de información
+              para fomentar la correcta separación en los hogares.
+            </p>
+
+            <blockquote>
+              “Reciclar correctamente es una acción clave para reducir residuos
+              y avanzar hacia una economía más circular”
+            </blockquote>
+          </article>
+        </div>
+      </section>
+
+      <!-- EVENTOS -->
+      <section id="eventos">
+        <h2>Eventos Medioambientales</h2>
+
+        <ul class="timeline">
+          <li>
+            <span class="dot"></span>
+            <div>
+              <strong>Jornada de limpieza de playas</strong>
+              <p>18 de mayo · Punto de encuentro: Pont del Petroli</p>
+            </div>
+          </li>
+          <li>
+            <span class="dot"></span>
+            <div>
+              <strong>Taller de reciclaje doméstico</strong>
+              <p>25 de mayo · Centro Cívico</p>
+            </div>
+          </li>
+          <li>
+            <span class="dot"></span>
+            <div>
+              <strong>Día de la movilidad sostenible</strong>
+              <p>5 de junio · Ruta urbana en bici</p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Imagen como enlace -->
+        <a href="galeria.html">
+          <img
+            src="img/galeria/limpiando_playa.jpg"
+            alt="Limpieza de playas en Badalona"
+          />
+        </a>
+      </section>
+
+      <!-- EDUCACIÓN AMBIENTAL -->
+      <section id="educacion">
+        <h2>Educación y Concienciación Ambiental</h2>
+
         <p>
-          El Ayuntamiento de Badalona ha iniciado un plan de mejora de parques
-          y espacios verdes para aumentar la calidad del aire y el bienestar
-          ciudadano.
+          El Ayuntamiento de Badalona promueve programas educativos en escuelas
+          para fomentar el respeto por el medio ambiente desde edades tempranas.
         </p>
-        <blockquote cite="https://www.badalona.cat">
-          “Una ciudad más verde es una ciudad más saludable”
-        </blockquote>
-      </article>
 
-      <article class="card">
-        <span class="tag">Reciclaje</span>
-        <h3>Más puntos de reciclaje en los barrios</h3>
         <p>
-          Se han instalado nuevos contenedores de reciclaje en diferentes
-          distritos para facilitar la separación de residuos.
+          Estos programas están alineados con los
+          <a href="ue_agenda2030.html">Objetivos de Desarrollo Sostenible</a>
+          de la Agenda 2030.
         </p>
-      </article>
-    </div>
-  </section>
 
-  <!-- EVENTOS -->
-  <section id="eventos">
-    <h2>Eventos Medioambientales</h2>
+        <!-- Cita en línea -->
+        <q>La educación es la base del cambio sostenible</q>
+      </section>
+    </main>
 
-    <ul class="timeline">
-      <li>
-        <span class="dot"></span>
-        <div>
-          <strong>Jornada de limpieza de playas</strong>
-          <p>18 de mayo · Punto de encuentro: Pont del Petroli</p>
-        </div>
-      </li>
-      <li>
-        <span class="dot"></span>
-        <div>
-          <strong>Taller de reciclaje doméstico</strong>
-          <p>25 de mayo · Centro Cívico</p>
-        </div>
-      </li>
-      <li>
-        <span class="dot"></span>
-        <div>
-          <strong>Día de la movilidad sostenible</strong>
-          <p>5 de junio · Ruta urbana en bici</p>
-        </div>
-      </li>
-    </ul>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <p>
+        <a href="https://www.badalona.cat" target="_blank">
+          &copy; 2026 Ayuntamiento de Badalona
+        </a>
+      </p>
+    </footer>
 
-    <!-- Imagen como enlace -->
-    <a href="galeria.html">
-      <img src="img/galeria/limpiando_playa.jpg" alt="Limpieza de playas en Badalona">
-    </a>
-  </section>
-
-  <!-- EDUCACIÓN AMBIENTAL -->
-  <section id="educacion">
-    <h2>Educación y Concienciación Ambiental</h2>
-
-    <p>
-      El Ayuntamiento de Badalona promueve programas educativos en escuelas
-      para fomentar el respeto por el medio ambiente desde edades tempranas.
-    </p>
-
-    <p>
-      Estos programas están alineados con los
-      <a href="ue_agenda2030.html">Objetivos de Desarrollo Sostenible</a>
-      de la Agenda 2030.
-    </p>
-
-    <!-- Cita en línea -->
-    <q>La educación es la base del cambio sostenible</q>
-  </section>
-
-</main>
-
-<!-- PIE DE PÁGINA -->
-<footer>
-  <p>
-    <a href="https://www.badalona.cat" target="_blank">
-      &copy; 2026 Ayuntamiento de Badalona
-    </a>
-  </p>
-</footer>
-
-
-<!-- BOTÓN VOLVER ARRIBA (ANCLA) -->
-<a class="to-top" href="#top" aria-label="Volver arriba">↑</a>
-
-</body>
+    <!-- BOTÓN VOLVER ARRIBA (ANCLA) -->
+    <a class="to-top" href="#top" aria-label="Volver arriba">↑</a>
+  </body>
 </html>
