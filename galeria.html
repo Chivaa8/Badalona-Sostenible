@@ -1,132 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Galería | Badalona Sostenible</title>
-    <link rel="stylesheet" href="css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería | Badalona Sostenible</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<body>
+<body id="top">
 
 <!-- CABECERA -->
 <header class="header-principal">
-
-    <div class="header-contenido">
-        <img src="img/header/Escut_de_badalona.png"
-             alt="Escudo de Badalona"
-             class="logo">
-
-        <div class="titulo-header">
-            <h1>Galería de Imágenes</h1>
-            <p>Proyectos y espacios naturales de Badalona</p>
-        </div>
+  <div class="header-contenido">
+    <img src="img/header/Escut_de_badalona.png" alt="Escudo de Badalona" class="logo">
+    <div class="titulo-header">
+      <h1>Galería de Imágenes</h1>
+      <p>Proyectos y espacios naturales de Badalona</p>
     </div>
-
+  </div>
 </header>
 
 <!-- MENÚ -->
 <nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="medidas.html">Medidas</a></li>
-        <li><a href="galeria.html">Galería</a></li>
-        <li><a href="consejos.html">Consejos</a></li>
-        <li><a href="ue_agenda2030.html">Agenda 2030</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="medidas.html">Medidas</a></li>
+    <li><a class="active" href="galeria.html">Galería</a></li>
+    <li><a href="consejos.html">Consejos</a></li>
+    <li><a href="ue_agenda2030.html">Agenda 2030</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
 </nav>
 
 <!-- CONTENIDO PRINCIPAL -->
 <main>
 
-    <section>
-        <h2>Badalona y su compromiso con el medio ambiente</h2>
-        <p>
-            A continuación se muestran algunos de los espacios naturales,
-            proyectos ambientales y actividades sostenibles promovidas
-            por el Ayuntamiento de Badalona.
-        </p>
-    </section>
+  <section>
+    <h2>Badalona y su compromiso con el medio ambiente</h2>
+    <p>
+      A continuación se muestran algunos de los espacios naturales,
+      proyectos ambientales y actividades sostenibles promovidas
+      por el Ayuntamiento de Badalona.
+    </p>
+  </section>
 
-    <!--  GALERÍA -->
-    <section class="galeria">
+  <!-- GALERÍA (GRID) -->
+  <section class="galeria">
 
-        <!-- Imagen 1 -->
-        <figure>
-            <a href="img/playa-badalona.jpg">
-                <img src="img/ciudad/playa.jpg" alt="Playa de Badalona">
-            </a>
-            <figcaption>
-                Playa de Badalona: conservación del litoral y limpieza de playas.
-            </figcaption>
-        </figure>
+    <figure>
+      <img class="zoom" src="img/ciudad/playa.jpg" alt="Playa de Badalona: conservación del litoral y limpieza de playas.">
+      <figcaption>Playa de Badalona: conservación del litoral y limpieza de playas.</figcaption>
+    </figure>
 
-        <!-- Imagen 2 -->
-        <figure>
-            <a href="img/parque-badalona.jpg">
-                <img src="img/ciudad/parque.jpg" alt="Parque de Can Solei i Ca l'Arnús">
-            </a>
-            <figcaption>
-                Parque de Can Solei i Ca l'Arnús, pulmón verde de la ciudad.
-            </figcaption>
-        </figure>
+    <figure>
+      <img class="zoom" src="img/ciudad/parque.jpg" alt="Parque de Can Solei i Ca l'Arnús, pulmón verde de la ciudad.">
+      <figcaption>Parque de Can Solei i Ca l'Arnús, pulmón verde de la ciudad.</figcaption>
+    </figure>
 
-        <!-- Imagen 3 -->
-        <figure>
-            <a href="img/limpieza-playa.jpg">
-                <img src="img/galeria/limpiando_playa.jpg" alt="Jornada de limpieza de playas">
-            </a>
-            <figcaption>
-                Jornadas de limpieza de playas con voluntariado local.
-            </figcaption>
-        </figure>
+    <figure>
+      <img class="zoom" src="img/galeria/limpiando_playa.jpg" alt="Jornadas de limpieza de playas con voluntariado local.">
+      <figcaption>Jornadas de limpieza de playas con voluntariado local.</figcaption>
+    </figure>
 
-        <!-- Imagen 4 -->
-        <figure>
-            <a href="img/punto-verde.jpg">
-                <img src="img/medidas/punto_verde.jpg" alt="Punto verde de reciclaje">
-            </a>
-            <figcaption>
-                Puntos verdes municipales para la correcta gestión de residuos.
-            </figcaption>
-        </figure>
+    <figure>
+      <img class="zoom" src="img/medidas/punto_verde.jpg" alt="Puntos verdes municipales para la correcta gestión de residuos.">
+      <figcaption>Puntos verdes municipales para la correcta gestión de residuos.</figcaption>
+    </figure>
 
-        <!-- Imagen 5 -->
-        <figure>
-            <a href="img/paneles-solares.jpg">
-                <img src="img/galeria/placas.jpg" alt="Paneles solares en edificios públicos">
-            </a>
-            <figcaption>
-                Instalación de paneles solares en edificios públicos de Badalona.
-            </figcaption>
-        </figure>
+    <figure>
+      <img class="zoom" src="img/galeria/placas.jpg" alt="Instalación de paneles solares en edificios públicos de Badalona.">
+      <figcaption>Instalación de paneles solares en edificios públicos de Badalona.</figcaption>
+    </figure>
 
-        <!-- Imagen 6 -->
-        <figure>
-            <a href="img/taller-reciclaje.jpg">
-                <img src="img/galeria/educacion_badalona.jpg" alt="Taller de reciclaje">
-            </a>
-            <figcaption>
-                Talleres de reciclaje y educación ambiental para la ciudadanía.
-            </figcaption>
-        </figure>
+    <figure>
+      <img class="zoom" src="img/galeria/educacion_badalona.jpg" alt="Talleres de reciclaje y educación ambiental para la ciudadanía.">
+      <figcaption>Talleres de reciclaje y educación ambiental para la ciudadanía.</figcaption>
+    </figure>
 
-    </section>
+  </section>
 
-    <!-- ENLACE INTERNO  -->
-    <section>
-        <p>
-            ¿Quieres saber más sobre estas acciones?
-            Consulta las <a href="medidas.html">medidas medioambientales del Ayuntamiento</a>.
-        </p>
-    </section>
+  <!-- ENLACE INTERNO -->
+  <section>
+    <p>
+      ¿Quieres saber más sobre estas acciones?
+      Consulta las <a href="medidas.html">medidas medioambientales del Ayuntamiento</a>.
+    </p>
+  </section>
+
+  <!-- MODAL ZOOM -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <button id="cerrar" class="modal-close" aria-label="Cerrar">×</button>
+    <img id="modalImg" alt="">
+    <p id="modalTxt"></p>
+  </div>
+
+  <script>
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImg');
+    const modalTxt = document.getElementById('modalTxt');
+    const cerrar = document.getElementById('cerrar');
+
+    document.querySelectorAll('img.zoom').forEach(img => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => {
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+        modalTxt.textContent = img.alt;
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden','false');
+      });
+    });
+
+    cerrar.addEventListener('click', () => {
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden','true');
+    });
+
+    modal.addEventListener('click', (e) => {
+      if(e.target === modal) cerrar.click();
+    });
+  </script>
 
 </main>
 
 <!-- PIE DE PÁGINA -->
 <footer>
-    <p>&copy; 2026 Ayuntamiento de Badalona</p>
+  <p>
+    <a href="https://www.badalona.cat" target="_blank">
+      &copy; 2026 Ayuntamiento de Badalona
+    </a>
+  </p>
 </footer>
+
+
+<!-- BOTÓN VOLVER ARRIBA -->
+<a class="to-top" href="#top" aria-label="Volver arriba">↑</a>
 
 </body>
 </html>
