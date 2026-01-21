@@ -368,3 +368,90 @@ footer a:hover{
   font-size: 28px;
   cursor: pointer;
 }
+
+/* EVENTOS - TIMELINE */
+
+.eventos-timeline {
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.eventos-timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #b2dfdb;
+}
+
+.eventos-timeline li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.eventos-timeline li::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background: #009688;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #e0f2f1;
+}
+
+.eventos-timeline h4 {
+  margin: 0;
+  color: #004d40;
+  font-size: 1rem;
+}
+
+.eventos-timeline p {
+  margin: 4px 0 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.imagen-evento{
+  max-width: 900px;       /* mismo “ancho de lectura” aprox */
+  margin: 18px auto 0;    /* centra el bloque dentro de la sección */
+}
+
+.imagen-evento a{
+  display: block;
+}
+
+.imagen-evento img{
+  display: block;
+  width: 520px;           /* tamaño bonito, acorde a texto */
+  max-width: 100%;
+  margin: 0 auto;         /* centra la imagen dentro del bloque */
+  border-radius: 12px;
+}
+
+.timeline-imagen{ margin-top: 14px; }
+.timeline-imagen img{ max-width: 420px; width: 100%; border-radius: 12px; display:block; }
+
+/* === CORRECCIÓN ANCLAS (offset para títulos) === */
+section {
+  scroll-margin-top: 120px; /* ajusta si tu header es más alto */
+}
+
+
+.mini-indicadores{
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  color: var(--muted);
+}
+
+.mini-indicadores li{
+  margin: 4px 0;
+}
+
