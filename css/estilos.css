@@ -446,5 +446,17 @@ footer a:hover{
 }
 
 
+/* MODAL GALERÍA - asegurar que tapa TODO (incluido footer) */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.65);
+  z-index: 9999;           /* CLAVE: por encima del footer */
+}
+
+/* Evita scroll del fondo cuando el modal está abierto */
+body.modal-open {
+  overflow: hidden;
+}
 
 
