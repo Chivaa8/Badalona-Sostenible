@@ -39,6 +39,11 @@
   <section>
     <h2>Datos de contacto</h2>
 
+    <p>
+      Para consultas sobre residuos, limpieza, espacios verdes o incidencias ambientales,
+      puedes contactar con el Ayuntamiento o enviar una comunicación mediante el formulario.
+    </p>
+
     <!-- Tabla vertical -->
     <table>
       <tr><th>Entidad</th><td>Ajuntament de Badalona</td></tr>
@@ -48,7 +53,7 @@
     </table>
   </section>
 
-  <!-- HORARIO (TABLA HORIZONTAL) -->
+  <!-- HORARIO  -->
   <section>
     <h2>Horario de atención</h2>
 
@@ -61,6 +66,8 @@
   <!-- MAPA -->
   <section>
     <h2>Ubicación del Ayuntamiento</h2>
+
+    <p>Atención presencial en el edificio municipal de la Plaça de la Vila.</p>
 
     <iframe
       title="Mapa del Ajuntament de Badalona"
@@ -78,29 +85,75 @@
     <h2>Formulario de denuncia ambiental</h2>
 
     <p>
-      Utiliza este formulario para comunicar actividades que puedan perjudicar
-      el medio ambiente en Badalona.
+      Usa este formulario para informar de incidencias como vertidos, acumulación de residuos,
+      quema incontrolada, daños en zonas verdes o molestias ambientales. Cuanta más información
+      aportes (lugar exacto, hora aproximada y fotos), más fácil será revisarlo.
     </p>
+
+    <!-- Aviso anonimo -->
+    <div class="aviso-anonimo" role="note">
+      <strong>Importante:</strong> Puedes enviar la denuncia de forma anónima.
+      Si no quieres identificarte, deja <strong>Nombre</strong> y <strong>Correo</strong> en blanco.
+    </div>
 
     <form action="#" method="post" enctype="multipart/form-data">
 
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+      <label for="nombre">Nombre (opcional):</label>
+      <input type="text" id="nombre" name="nombre">
 
-      <label for="email">Correo electrónico:</label>
+      <label for="email">Correo electrónico (opcional):</label>
       <input type="email" id="email" name="email">
 
-      <label for="zona">Zona afectada:</label>
-      <select id="zona" name="zona">
-        <option>Centro</option>
-        <option>Gorg</option>
-        <option>Llefià</option>
-        <option>La Salut</option>
-        <option>Pompeu Fabra</option>
+      <label for="zona">Barrio o zona afectada:</label>
+      <select id="zona" name="zona" required>
+        <option value="">Selecciona una opción</option>
+
+        <optgroup label="Districte 1">
+          <option>Centre</option>
+          <option>Progrés</option>
+          <option>Dalt de la Vila</option>
+          <option>Canyadó</option>
+          <option>Casagemes</option>
+          <option>Coll i Pujol</option>
+          <option>Manresà</option>
+        </optgroup>
+
+        <optgroup label="Districte 2">
+          <option>Sant Crist</option>
+          <option>Sistrells</option>
+          <option>Lloreda</option>
+          <option>Nova Lloreda</option>
+          <option>Puigfred</option>
+          <option>La Pau</option>
+          <option>Montigalà</option>
+        </optgroup>
+
+        <optgroup label="Districte 4">
+          <option>La Salut</option>
+          <option>Sant Antoni de Llefià</option>
+          <option>Sant Joan de Llefià</option>
+          <option>Sant Mori de Llefià</option>
+        </optgroup>
+
+        <optgroup label="Districte 5">
+          <option>Gorg</option>
+          <option>La Mora</option>
+          <option>Congrés</option>
+          <option>Can Claris</option>
+          <option>Raval</option>
+        </optgroup>
+
+        <optgroup label="Districte 6">
+          <option>Artigues</option>
+          <option>Sant Roc</option>
+          <option>El Remei</option>
+        </optgroup>
+
+        <option>Otra zona / No lo sé</option>
       </select>
 
       <label for="mensaje">Descripción de la incidencia:</label>
-      <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
       <label for="archivo">Adjuntar imagen o archivo:</label>
       <input type="file" id="archivo" name="archivo">
@@ -119,7 +172,6 @@
     </a>
   </p>
 </footer>
-
 
 <!-- BOTÓN VOLVER ARRIBA -->
 <a class="to-top" href="#top" aria-label="Volver arriba">↑</a>
