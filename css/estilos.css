@@ -21,9 +21,11 @@
   --shadow: 0 10px 30px rgba(0,0,0,.08);
 }
 
-html{ scroll-behavior: smooth; }
-
-
+/* Scroll suave + compensación para anclas (header sticky) */
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 140px; /* ajusta si hace falta */
+}
 
 body{
   font-family: Arial, Helvetica, sans-serif;
@@ -93,9 +95,7 @@ nav ul{
   padding: 10px 8px;
 }
 
-nav ul li{
-  margin: 0;
-}
+nav ul li{ margin: 0; }
 
 nav ul li a{
   color: var(--text);
@@ -130,11 +130,17 @@ section{
   border-radius: var(--radius);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
+  scroll-margin-top: 140px; /* anclas sin tapar títulos */
 }
 
 section h2{
   color: var(--primary);
   margin-bottom: 10px;
+}
+
+/* Separación extra tras el primer párrafo (tu “lluvias intensas”) */
+main section:first-of-type p{
+  margin-bottom: 40px;
 }
 
 /* LISTAS */
@@ -145,11 +151,11 @@ dl{ margin: 10px 0; }
 dt{ font-weight: bold; color: var(--primary); }
 dd{ margin-left: 20px; margin-bottom: 10px; color: var(--muted); }
 
-/* TARJETAS (INDEX) */
+/* TARJETAS (2x2 + más grandes) */
 .grid-cards{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
   margin-top: 10px;
 }
 
@@ -157,8 +163,9 @@ dd{ margin-left: 20px; margin-bottom: 10px; color: var(--muted); }
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 18px;
+  padding: 30px;
   box-shadow: var(--shadow);
+  font-size: 1.05rem;
 }
 
 .tag{
@@ -172,7 +179,19 @@ dd{ margin-left: 20px; margin-bottom: 10px; color: var(--muted); }
   margin-bottom: 10px;
 }
 
-/* TIMELINE (EVENTOS) */
+/* Indicadores dentro de cards */
+.mini-indicadores{
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  color: var(--muted);
+}
+
+.mini-indicadores li{
+  margin: 4px 0;
+}
+
+/* TIMELINE (la antigua .timeline, por si la usas en otra página) */
 .timeline{
   list-style: none;
   margin: 10px 0 0;
@@ -199,6 +218,66 @@ dd{ margin-left: 20px; margin-bottom: 10px; color: var(--muted); }
 .timeline p{
   margin: 4px 0 0;
   color: var(--muted);
+}
+
+/* EVENTOS - TIMELINE (la que usas ahora) */
+.eventos-timeline{
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.eventos-timeline::before{
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #b2dfdb;
+}
+
+.eventos-timeline li{
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.eventos-timeline li::before{
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background: #009688;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #e0f2f1;
+}
+
+.eventos-timeline h4{
+  margin: 0;
+  color: #004d40;
+  font-size: 1rem;
+}
+
+.eventos-timeline p{
+  margin: 4px 0 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Imagen dentro del último evento */
+.timeline-imagen{
+  margin-top: 14px;
+}
+
+.timeline-imagen img{
+  max-width: 420px;
+  width: 100%;
+  border-radius: 12px;
+  display: block;
 }
 
 /* TABLAS */
@@ -233,9 +312,7 @@ img{
   gap: 20px;
 }
 
-.galeria figure{
-  text-align: center;
-}
+.galeria figure{ text-align: center; }
 
 .galeria figcaption{
   font-size: 0.92em;
@@ -309,7 +386,6 @@ footer a:hover{
   text-decoration: underline;
 }
 
-
 /* BOTÓN VOLVER ARRIBA */
 .to-top{
   position: fixed;
@@ -369,89 +445,6 @@ footer a:hover{
   cursor: pointer;
 }
 
-/* EVENTOS - TIMELINE */
-
-.eventos-timeline {
-  list-style: none;
-  margin-top: 20px;
-  padding-left: 30px;
-  position: relative;
-}
-
-.eventos-timeline::before {
-  content: "";
-  position: absolute;
-  left: 8px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #b2dfdb;
-}
-
-.eventos-timeline li {
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 30px;
-}
-
-.eventos-timeline li::before {
-  content: "";
-  position: absolute;
-  left: -6px;
-  top: 6px;
-  width: 14px;
-  height: 14px;
-  background: #009688;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px #e0f2f1;
-}
-
-.eventos-timeline h4 {
-  margin: 0;
-  color: #004d40;
-  font-size: 1rem;
-}
-
-.eventos-timeline p {
-  margin: 4px 0 0;
-  color: #555;
-  font-size: 0.95rem;
-}
-
-.imagen-evento{
-  max-width: 900px;       /* mismo “ancho de lectura” aprox */
-  margin: 18px auto 0;    /* centra el bloque dentro de la sección */
-}
-
-.imagen-evento a{
-  display: block;
-}
-
-.imagen-evento img{
-  display: block;
-  width: 520px;           /* tamaño bonito, acorde a texto */
-  max-width: 100%;
-  margin: 0 auto;         /* centra la imagen dentro del bloque */
-  border-radius: 12px;
-}
-
-.timeline-imagen{ margin-top: 14px; }
-.timeline-imagen img{ max-width: 420px; width: 100%; border-radius: 12px; display:block; }
-
-/* === CORRECCIÓN ANCLAS (offset para títulos) === */
-section {
-  scroll-margin-top: 120px; /* ajusta si tu header es más alto */
-}
 
 
-.mini-indicadores{
-  list-style: none;
-  margin: 12px 0 0;
-  padding: 0;
-  color: var(--muted);
-}
-
-.mini-indicadores li{
-  margin: 4px 0;
-}
 

@@ -9,7 +9,6 @@
 
 <body id="top">
 
-<!-- CABECERA -->
 <header class="header-principal">
   <div class="header-contenido">
     <img src="img/header/Escut_de_badalona.png" alt="Escudo de Badalona" class="logo">
@@ -20,7 +19,6 @@
   </div>
 </header>
 
-<!-- MENÚ -->
 <nav>
   <ul>
     <li><a href="index.html">Inicio</a></li>
@@ -32,11 +30,10 @@
   </ul>
 </nav>
 
-<!-- CONTENIDO PRINCIPAL -->
 <main>
 
-  <!-- Introducción más “local” y menos genérica -->
-  <section>
+  <!-- INTRODUCCIÓN -->
+  <section class="plan-areas">
     <h2>Compromiso ambiental de Badalona</h2>
     <p>
       Badalona combina zonas urbanas densas, espacios verdes y un litoral muy
@@ -44,18 +41,9 @@
       del aire, reducir residuos y avanzar hacia una ciudad más resiliente
       frente a episodios de calor y lluvias intensas.
     </p>
-
-    <!-- Anclas internas (diferencial) -->
-    <p><strong>Ir a:</strong>
-      <a href="#energia">Energía</a> ·
-      <a href="#residuos">Residuos</a> ·
-      <a href="#movilidad">Movilidad</a> ·
-      <a href="#litoral">Litoral</a> ·
-      <a href="#resumen">Resumen</a>
-    </p>
   </section>
 
-  <!-- Tarjetas tipo “plan de acción” (diferencial) -->
+  <!-- PLAN DE ACCIÓN -->
   <section>
     <h2>Plan de acción por áreas</h2>
 
@@ -67,8 +55,6 @@
           Mejora del consumo energético en equipamientos municipales y apuesta por
           energías limpias, como el autoconsumo en edificios públicos.
         </p>
-
-        <!-- Mini “indicadores” sin números inventados -->
         <ul class="mini-indicadores">
           <li><strong>Impacto:</strong> Alto</li>
           <li><strong>Dificultad:</strong> Media</li>
@@ -83,7 +69,6 @@
           Refuerzo de la separación de residuos con puntos de reciclaje y acciones
           informativas para facilitar hábitos sostenibles en los hogares.
         </p>
-
         <ul class="mini-indicadores">
           <li><strong>Impacto:</strong> Alto</li>
           <li><strong>Dificultad:</strong> Baja</li>
@@ -98,7 +83,6 @@
           Medidas para priorizar el transporte público, desplazamientos a pie y en bicicleta,
           reduciendo el tráfico y la contaminación en el día a día.
         </p>
-
         <ul class="mini-indicadores">
           <li><strong>Impacto:</strong> Medio</li>
           <li><strong>Dificultad:</strong> Media</li>
@@ -113,7 +97,6 @@
           Acciones de mantenimiento y sensibilización para cuidar el litoral y conservar
           parques urbanos como espacios clave de bienestar y biodiversidad.
         </p>
-
         <ul class="mini-indicadores">
           <li><strong>Impacto:</strong> Medio</li>
           <li><strong>Dificultad:</strong> Media</li>
@@ -123,10 +106,9 @@
     </div>
   </section>
 
-  <!-- Ejemplos (reutilizas tus imágenes) -->
+  <!-- EJEMPLOS -->
   <section>
     <h2>Ejemplos de actuaciones</h2>
-
     <p>
       A continuación se muestran ejemplos visuales de medidas habituales: energías renovables
       en equipamientos y puntos de recogida selectiva para mejorar la gestión de residuos.
@@ -136,67 +118,34 @@
     <img src="img/medidas/punto_verde.jpg" alt="Punto verde de reciclaje en Badalona">
   </section>
 
-  <!-- Tabla vertical (diferencial y “profe-friendly”) -->
+  <!-- TABLA VERTICAL -->
   <section>
     <h2>Ficha rápida de una medida</h2>
-
     <table>
-      <tr>
-        <th>Medida</th>
-        <td>Refuerzo de la recogida selectiva</td>
-      </tr>
-      <tr>
-        <th>¿Qué se hace?</th>
-        <td>Mejorar puntos de reciclaje e informar sobre separación correcta</td>
-      </tr>
-      <tr>
-        <th>Objetivo</th>
-        <td>Reducir residuos mezclados y aumentar la reutilización/reciclaje</td>
-      </tr>
-      <tr>
-        <th>Beneficio</th>
-        <td>Menos impacto ambiental y mejor gestión de materiales</td>
-      </tr>
+      <tr><th>Medida</th><td>Refuerzo de la recogida selectiva</td></tr>
+      <tr><th>¿Qué se hace?</th><td>Mejorar puntos de reciclaje e informar sobre separación correcta</td></tr>
+      <tr><th>Objetivo</th><td>Reducir residuos mezclados y aumentar la reutilización/reciclaje</td></tr>
+      <tr><th>Beneficio</th><td>Menos impacto ambiental y mejor gestión de materiales</td></tr>
     </table>
   </section>
 
-  <!-- Tabla resumen (la tuya, pero con id y texto mejorado) -->
+  <!-- RESUMEN -->
   <section id="resumen">
     <h2>Impacto de las medidas medioambientales</h2>
-
     <table>
       <tr>
         <th>Área</th>
         <th>Objetivo</th>
         <th>Beneficio ambiental</th>
       </tr>
-      <tr>
-        <td>Energía</td>
-        <td>Reducir consumo y mejorar eficiencia</td>
-        <td>Menos emisiones de CO₂</td>
-      </tr>
-      <tr>
-        <td>Residuos</td>
-        <td>Separar mejor y reducir vertedero</td>
-        <td>Menos contaminación y más reutilización</td>
-      </tr>
-      <tr>
-        <td>Movilidad</td>
-        <td>Disminuir el uso del coche</td>
-        <td>Mejor calidad del aire</td>
-      </tr>
-      <tr>
-        <td>Litoral y verde</td>
-        <td>Conservar playas y parques</td>
-        <td>Más biodiversidad y bienestar urbano</td>
-      </tr>
+      <tr><td>Energía</td><td>Reducir consumo y mejorar eficiencia</td><td>Menos emisiones de CO₂</td></tr>
+      <tr><td>Residuos</td><td>Separar mejor y reducir vertedero</td><td>Menos contaminación y más reutilización</td></tr>
+      <tr><td>Movilidad</td><td>Disminuir el uso del coche</td><td>Mejor calidad del aire</td></tr>
+      <tr><td>Litoral y verde</td><td>Conservar playas y parques</td><td>Más biodiversidad y bienestar urbano</td></tr>
     </table>
-
-    <p style="margin-top: 12px;">
-      <a href="#top">Volver arriba</a>
-    </p>
   </section>
 
+  <!-- CIERRE -->
   <section>
     <p>
       Estas medidas se complementan con recomendaciones prácticas para ciudadanía y empresas,
@@ -219,3 +168,4 @@
 
 </body>
 </html>
+
