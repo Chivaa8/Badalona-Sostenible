@@ -1,3 +1,6 @@
+/* =========================
+   RESET + VARIABLES
+========================= */
 *{
   box-sizing: border-box;
   margin: 0;
@@ -21,10 +24,14 @@
   --shadow: 0 10px 30px rgba(0,0,0,.08);
 }
 
-/* Scroll suave + compensación para anclas (header sticky) */
+/* =========================
+   SCROLL + ANCLAS (FIX)
+========================= */
 html{
   scroll-behavior: smooth;
-  scroll-padding-top: 140px; 
+
+  /* Compensa header sticky + nav */
+  scroll-padding-top: 170px;
 }
 
 body{
@@ -34,17 +41,22 @@ body{
               radial-gradient(900px 500px at 90% 10%, #eafaf4, transparent 55%),
               var(--bg);
   color: var(--text);
+  min-height: auto;
 }
 
-/* CABECERA */
+/* =========================
+   CABECERA
+========================= */
 .header-principal{
   background: linear-gradient(120deg, var(--primary), var(--primary-2));
   padding: 26px 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  position: static;   
+  top: auto;          
+  z-index: auto;      
   box-shadow: 0 8px 20px rgba(0,0,0,.10);
 }
+
+
 
 .header-contenido{
   max-width: 1100px;
@@ -79,7 +91,9 @@ body{
   opacity: .92;
 }
 
-/* MENÚ */
+/* =========================
+   MENÚ
+========================= */
 nav{
   background: rgba(255,255,255,.70);
   border-bottom: 1px solid var(--border);
@@ -116,11 +130,15 @@ nav ul li a.active{
   color: white;
 }
 
-/* CONTENIDO */
+/* =========================
+   CONTENIDO + SECTIONS
+========================= */
 main{
   max-width: 1100px;
   margin: 20px auto;
   padding: 0 15px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 section{
@@ -130,7 +148,9 @@ section{
   border-radius: var(--radius);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
-  scroll-margin-top: 140px; /* anclas sin tapar títulos */
+
+  /* Compensa anclas por si alguna usa scroll-margin */
+  scroll-margin-top: 170px;
 }
 
 section h2{
@@ -138,12 +158,16 @@ section h2{
   margin-bottom: 10px;
 }
 
-/* Separación extra tras el primer párrafo  */
-main section:first-of-type p{
-  margin-bottom: 40px;
+/* Ajuste intro de Medidas  */
+.plan-areas{
+  padding-bottom: 14px;
+  margin-bottom: 14px;
 }
+.plan-areas p{ margin-bottom: 0; }
 
-/* LISTAS */
+/* =========================
+   LISTAS / DEFINICIÓN
+========================= */
 ul{ margin-left: 20px; }
 li{ margin-bottom: 6px; }
 
@@ -151,7 +175,9 @@ dl{ margin: 10px 0; }
 dt{ font-weight: bold; color: var(--primary); }
 dd{ margin-left: 20px; margin-bottom: 10px; color: var(--muted); }
 
-/* TARJETAS (2x2 + más grandes) */
+/* =========================
+   TARJETAS (GRID)
+========================= */
 .grid-cards{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -186,12 +212,16 @@ dd{ margin-left: 20px; margin-bottom: 10px; color: var(--muted); }
   padding: 0;
   color: var(--muted);
 }
+.mini-indicadores li{ margin: 4px 0; }
 
-.mini-indicadores li{
-  margin: 4px 0;
+/* Responsive: en móvil 1 columna */
+@media (max-width: 780px){
+  .grid-cards{ grid-template-columns: 1fr; }
 }
 
-/* TIMELINE  */
+/* =========================
+   TIMELINE 
+========================= */
 .timeline{
   list-style: none;
   margin: 10px 0 0;
@@ -220,7 +250,9 @@ dd{ margin-left: 20px; margin-bottom: 10px; color: var(--muted); }
   color: var(--muted);
 }
 
-/* EVENTOS - TIMELINE  */
+/* =========================
+   EVENTOS - TIMELINE 
+========================= */
 .eventos-timeline{
   list-style: none;
   margin-top: 20px;
@@ -269,10 +301,7 @@ dd{ margin-left: 20px; margin-bottom: 10px; color: var(--muted); }
 }
 
 /* Imagen dentro del último evento */
-.timeline-imagen{
-  margin-top: 14px;
-}
-
+.timeline-imagen{ margin-top: 14px; }
 .timeline-imagen img{
   max-width: 420px;
   width: 100%;
@@ -280,7 +309,9 @@ dd{ margin-left: 20px; margin-bottom: 10px; color: var(--muted); }
   display: block;
 }
 
-/* TABLAS */
+/* =========================
+   TABLAS
+========================= */
 table{
   width: 100%;
   border-collapse: collapse;
@@ -295,9 +326,12 @@ table th, table td{
 
 table th{
   background: rgba(14,165,164,.10);
+  color: var(--text);
 }
 
-/* IMÁGENES */
+/* =========================
+   IMÁGENES
+========================= */
 img{
   max-width: 100%;
   height: auto;
@@ -305,7 +339,9 @@ img{
   border-radius: 10px;
 }
 
-/* GALERÍA (GRID) */
+/* =========================
+   GALERÍA (GRID)
+========================= */
 .galeria{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -320,7 +356,9 @@ img{
   color: var(--muted);
 }
 
-/* FORMULARIOS */
+/* =========================
+   FORMULARIOS
+========================= */
 form{
   display: flex;
   flex-direction: column;
@@ -351,7 +389,9 @@ form input[type="submit"]:hover{
   filter: brightness(0.95);
 }
 
-/* CITAS */
+/* =========================
+   CITAS
+========================= */
 blockquote{
   background: rgba(14,165,164,.08);
   border-left: 6px solid var(--primary-2);
@@ -363,13 +403,16 @@ blockquote{
 
 q{ font-style: italic; }
 
-/* PIE */
+/* =========================
+   FOOTER (NO fijo)
+========================= */
 footer{
   background: linear-gradient(120deg, var(--primary), var(--primary-2));
   color: white;
   text-align: center;
   padding: 26px 15px;
-  margin-top: 40px;
+  margin-top: 30px;
+  position: static !important;
 }
 
 footer p{
@@ -386,11 +429,13 @@ footer a:hover{
   text-decoration: underline;
 }
 
-/* BOTÓN VOLVER ARRIBA */
+/* =========================
+   BOTÓN VOLVER ARRIBA
+========================= */
 .to-top{
   position: fixed;
   right: 16px;
-  bottom: 16px;
+  bottom: 24px; 
   width: 44px;
   height: 44px;
   display: grid;
@@ -406,14 +451,17 @@ footer a:hover{
 
 .to-top:hover{ transform: translateY(-2px); }
 
-/* MODAL GALERIA */
+/* =========================
+   MODAL GALERÍA 
+========================= */
 .modal{
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,.60);
+  background: rgba(0,0,0,.65);
   display: none;
   place-items: center;
   padding: 20px;
+  z-index: 9999;
 }
 
 .modal.open{ display: grid; }
@@ -445,20 +493,9 @@ footer a:hover{
   cursor: pointer;
 }
 
-
-/* MODAL GALERÍA - asegurar que tapa TODO  */
-.modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.65);
-  z-index: 9999;           /* CLAVE: por encima del footer */
-}
-
-/* Evita scroll del fondo cuando el modal está abierto */
-body.modal-open {
-  overflow: hidden;
-}
-
+/* =========================
+   DETAILS / Acordeones 
+========================= */
 details{
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -473,15 +510,41 @@ summary{
   font-weight: 800;
 }
 
-summary::-webkit-details-marker{
-  display: none;
+summary::-webkit-details-marker{ display: none; }
+
+details[open]{ background: rgba(14,165,164,.10); }
+
+/* ODS desplegables */
+.ods-lista details{
+  background: var(--card);
+  box-shadow: var(--shadow);
+  margin-bottom: 10px;
 }
 
-details[open]{
-  background: rgba(14,165,164,.10);
+.ods-lista summary{
+  font-weight: 700;
+  color: var(--primary);
 }
 
-/* Reto 7 días: */
+.ods-lista summary::before{
+  content: "▶";
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+}
+
+.ods-lista details[open] summary::before{
+  transform: rotate(90deg);
+}
+
+.ods-lista details p{
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+/* =========================
+   RETO 7 DÍAS 
+========================= */
 #reto ol{
   margin: 14px 0 0;
   padding-left: 0;
@@ -513,43 +576,9 @@ details[open]{
   font-weight: 900;
 }
 
-
-/* ODS desplegables */
-.ods-lista details {
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 12px 16px;
-  margin-bottom: 10px;
-  background: var(--card);
-  box-shadow: var(--shadow);
-}
-
-.ods-lista summary {
-  cursor: pointer;
-  font-weight: 700;
-  color: var(--primary);
-  list-style: none;
-}
-
-.ods-lista summary::marker {
-  display: none;
-}
-
-.ods-lista summary::before {
-  content: "▶";
-  display: inline-block;
-  margin-right: 8px;
-  transition: transform 0.2s ease;
-}
-
-.ods-lista details[open] summary::before {
-  transform: rotate(90deg);
-}
-
-.ods-lista details p {
-  margin-top: 10px;
-  color: var(--muted);
-}
+/* =========================
+   AVISO ANÓNIMO (Contacto)
+========================= */
 .aviso-anonimo{
   margin-top: 10px;
   padding: 12px 14px;
@@ -558,3 +587,18 @@ details[open]{
   background: rgba(255, 193, 7, 0.15);
   color: var(--text);
 }
+
+/* Arreglar listas dentro de details (números dentro del recuadro) */
+details ol,
+details ul{
+  margin-left: 0;
+  padding-left: 22px;     /* mete los números dentro */
+}
+
+details li{
+  margin-bottom: 8px;
+}
+
+html{ scroll-padding-top: 80px; }
+section{ scroll-margin-top: 80px; }
+
