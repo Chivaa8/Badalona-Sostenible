@@ -32,20 +32,33 @@
 
 <main>
 
-  <section>
+  <!-- Accesos rápidos (anclas) -->
+  <section class="accesos-rapidos">
+    <h2>Accesos rápidos</h2>
+    <ul>
+      <li><a href="#empresas">Empresas</a></li>
+      <li><a href="#ciudadania">Ciudadanía</a></li>
+      <li><a href="#programas">Programas municipales</a></li>
+      <li><a href="#reto">Reto 7 días</a></li>
+      <li><a href="#tabla">Tabla rápida</a></li>
+    </ul>
+  </section>
+
+  <!-- EMPRESAS -->
+  <section id="empresas">
     <h2>Consejos para Empresas</h2>
 
     <p>
-      Las empresas de Badalona juegan un papel clave en la transición hacia
-      un modelo económico más sostenible.
+      Las empresas de Badalona pueden reducir costes, cumplir normativa y mejorar su reputación
+      si integran criterios sostenibles en su forma de trabajar.
     </p>
 
     <!-- Lista de definición -->
     <dl>
       <dt>ASG</dt>
       <dd>
-        Criterios Ambientales, Sociales y de Gobernanza que evalúan el
-        impacto y la responsabilidad de una empresa.
+        Criterios Ambientales, Sociales y de Gobernanza que evalúan el impacto y la responsabilidad
+        de una empresa (cómo produce, cómo trata a las personas y cómo toma decisiones).
       </dd>
     </dl>
 
@@ -54,8 +67,8 @@
       <li>
         <strong>Diseño y producción sostenibles</strong>
         <ul>
-          <li>Economía circular</li>
-          <li>Ecodiseño de productos</li>
+          <li>Economía circular (reducir, reutilizar, reparar)</li>
+          <li>Ecodiseño de productos (duraderos y fáciles de reciclar)</li>
           <li>Reutilización y reciclaje de materiales</li>
         </ul>
       </li>
@@ -69,23 +82,33 @@
         </ul>
       </li>
     </ul>
+
+    <!-- Acordeones (sin JS) -->
+    <details>
+      <summary>Ver ejemplos rápidos para empresas</summary>
+      <ul>
+        <li>Separar residuos en zona de trabajo y señalizar contenedores.</li>
+        <li>Reducir papel: facturación digital y firmas electrónicas.</li>
+        <li>Compras responsables: proveedores locales y materiales reciclados.</li>
+      </ul>
+    </details>
   </section>
 
-  <section>
+  <!-- CIUDADANÍA -->
+  <section id="ciudadania">
     <h2>Consejos para la Ciudadanía</h2>
 
     <p>
-      Los ciudadanos de Badalona también pueden contribuir activamente
-      a la protección del medio ambiente.
+      La sostenibilidad no va de hacerlo perfecto: va de mejorar hábitos poco a poco.
+      Estas acciones tienen impacto real en el día a día.
     </p>
 
     <!-- Lista de definición -->
     <dl>
       <dt>ODS</dt>
       <dd>
-        Objetivos de Desarrollo Sostenible establecidos por la ONU
-        para erradicar la pobreza, proteger el planeta y garantizar
-        el bienestar.
+        Objetivos de Desarrollo Sostenible (ONU): metas globales para proteger el planeta
+        y mejorar el bienestar de las personas.
       </dd>
     </dl>
 
@@ -102,19 +125,29 @@
         <strong>Reducir la huella de carbono</strong>
         <ul>
           <li>Reducir el uso de plásticos</li>
-          <li>Compostaje doméstico</li>
+          <li>Compostaje doméstico (si tienes espacio)</li>
           <li>Evitar el desperdicio alimentario</li>
         </ul>
       </li>
     </ul>
+
+    <details>
+      <summary>Ideas “fáciles” para empezar hoy</summary>
+      <ul>
+        <li>Botella reutilizable + bolsa de tela siempre en la mochila.</li>
+        <li>Planifica la compra: menos comida a la basura.</li>
+        <li>Si el trayecto es corto, prueba caminar 2 días por semana.</li>
+      </ul>
+    </details>
   </section>
 
-  <section>
+  <!-- PROGRAMAS MUNICIPALES -->
+  <section id="programas">
     <h2>Programas municipales de Badalona</h2>
 
     <p>
-      El Ayuntamiento de Badalona ofrece diferentes recursos para facilitar
-      la sostenibilidad.
+      El Ayuntamiento de Badalona ofrece recursos para facilitar la sostenibilidad.
+      Para incidencias ambientales, puedes usar el formulario de denuncias.
     </p>
 
     <ul>
@@ -124,9 +157,65 @@
     </ul>
 
     <p>
-      Puedes consultar más información en la sección de
-      <a href="contacto.html">contacto</a>.
+      Más información en la sección de
+      <a href="contacto.html#denuncias">contacto</a>.
     </p>
+
+    <details>
+      <summary>¿Qué puedes hacer si ves una mala práctica ambiental?</summary>
+      <ol>
+        <li>Describe la incidencia (qué ocurre, dónde y cuándo).</li>
+        <li>Adjunta una foto si es posible.</li>
+        <li>Envía la denuncia desde la página de contacto.</li>
+      </ol>
+    </details>
+  </section>
+
+  <!-- RETO -->
+  <section id="reto">
+    <h2>Reto 7 días</h2>
+    <ol>
+      <li>Día 1: Separa residuos correctamente.</li>
+      <li>Día 2: Ducha de 5 minutos.</li>
+      <li>Día 3: Compra un producto de proximidad.</li>
+      <li>Día 4: 24h sin plástico de un solo uso.</li>
+      <li>Día 5: Un trayecto andando / transporte público.</li>
+      <li>Día 6: Repara o reutiliza algo antes de comprar.</li>
+      <li>Día 7: Deja un espacio mejor de como lo encontraste.</li>
+    </ol>
+  </section>
+
+  <!-- TABLA DIFERENCIAL -->
+  <section id="tabla">
+    <h2>Coste vs Impacto</h2>
+
+    <table>
+      <tr>
+        <th>Acción</th>
+        <th>Coste</th>
+        <th>Impacto</th>
+      </tr>
+      <tr>
+        <td>Separar residuos correctamente</td>
+        <td>Bajo</td>
+        <td>Alto</td>
+      </tr>
+      <tr>
+        <td>Reducir plásticos de un solo uso</td>
+        <td>Bajo</td>
+        <td>Medio</td>
+      </tr>
+      <tr>
+        <td>Usar transporte público / bici</td>
+        <td>Bajo</td>
+        <td>Alto</td>
+      </tr>
+      <tr>
+        <td>Mejorar eficiencia energética</td>
+        <td>Medio</td>
+        <td>Alto</td>
+      </tr>
+    </table>
   </section>
 
 </main>
@@ -138,7 +227,6 @@
     </a>
   </p>
 </footer>
-
 
 <a class="to-top" href="#top" aria-label="Volver arriba">↑</a>
 
