@@ -588,11 +588,11 @@ details[open]{ background: rgba(14,165,164,.10); }
   color: var(--text);
 }
 
-/* Arreglar listas dentro de details (números dentro del recuadro) */
+/* Arreglar listas dentro de details */
 details ol,
 details ul{
   margin-left: 0;
-  padding-left: 22px;     /* mete los números dentro */
+  padding-left: 22px;
 }
 
 details li{
