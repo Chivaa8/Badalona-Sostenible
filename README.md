@@ -23,6 +23,8 @@ https://Chivaa8.github.io/Badalona-Sostenible/
 
 ## 🛠️ Tecnologías usadas
 
-- HTML5
-- CSS3
+- HTML5  
+- CSS3  
+- JavaScript (gestión del modal de la galería de imágenes)  
 - Git & GitHub Pages
+
