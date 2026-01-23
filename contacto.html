@@ -1,203 +1,212 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto | Badalona Sostenible</title>
-    <link rel="stylesheet" href="css/estilos.css" />
-  </head>
 
-  <body id="top">
-    <!-- CABECERA -->
-    <header class="header-principal">
-      <div class="header-contenido">
-        <img
-          src="img/header/Escut_de_badalona.png"
-          alt="Escudo de Badalona"
-          class="logo"
-        />
-        <div class="titulo-header">
-          <h1>Contacto y Denuncias</h1>
-          <p>Ayúdanos a ser mejores</p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Badalona Sostenible</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body id="top">
+  <!-- CABECERA -->
+  <header class="header-principal">
+    <div class="header-contenido">
+      <img src="img/header/Escut_de_badalona.png" alt="Escudo de Badalona" class="logo" />
+      <div class="titulo-header">
+        <h1>Contacto y Denuncias</h1>
+        <p>Ayúdanos a ser mejores</p>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- MENÚ -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="medidas.html">Medidas</a></li>
-        <li><a href="galeria.html">Galería</a></li>
-        <li><a href="consejos.html">Consejos</a></li>
-        <li><a href="ue_agenda2030.html">Agenda 2030</a></li>
-        <li><a class="active" href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+  <!-- MENÚ -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="medidas.html">Medidas</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="consejos.html">Consejos</a></li>
+      <li><a href="ue_agenda2030.html">Agenda 2030</a></li>
+      <li><a class="active" href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
-      <!-- DATOS DE CONTACTO -->
-      <section>
-        <h2>Datos de contacto</h2>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- DATOS DE CONTACTO -->
+    <section>
+      <h2>Datos de contacto</h2>
 
-        <p>
-          Para consultas sobre residuos, limpieza, espacios verdes o incidencias
-          ambientales, puedes contactar con el Ayuntamiento o enviar una
-          comunicación mediante el formulario.
-        </p>
-
-        <!-- Tabla vertical -->
-        <table>
-          <tr>
-            <th>Entidad</th>
-            <td>Ajuntament de Badalona</td>
-          </tr>
-          <tr>
-            <th>Teléfono</th>
-            <td>934 832 600</td>
-          </tr>
-          <tr>
-            <th>Email</th>
-            <td>mediambient@badalona.cat</td>
-          </tr>
-          <tr>
-            <th>Dirección</th>
-            <td>Plaça de la Vila, 1 - Badalona</td>
-          </tr>
-        </table>
-      </section>
-
-      <!-- HORARIO  -->
-      <section>
-        <h2>Horario de atención</h2>
-
-        <table>
-          <tr>
-            <th>Día</th>
-            <th>Horario</th>
-          </tr>
-          <tr>
-            <td>Lunes a Viernes</td>
-            <td>09:00 - 14:00</td>
-          </tr>
-        </table>
-      </section>
-
-      <!-- MAPA -->
-      <section>
-        <h2>Ubicación del Ayuntamiento</h2>
-
-        <p>
-          Atención presencial en el edificio municipal de la Plaça de la Vila.
-        </p>
-
-        <iframe
-          title="Mapa del Ajuntament de Badalona"
-          src="https://www.google.com/maps?q=Ajuntament+de+Badalona&output=embed"
-          width="100%"
-          height="300"
-          style="border: 0"
-          allowfullscreen
-          loading="lazy"
-        >
-        </iframe>
-      </section>
-
-      <!-- FORMULARIO DE DENUNCIAS -->
-      <section id="denuncias">
-        <h2>Formulario de denuncia ambiental</h2>
-
-        <p>
-          Usa este formulario para informar de incidencias como vertidos,
-          acumulación de residuos, quema incontrolada, daños en zonas verdes o
-          molestias ambientales. Cuanta más información aportes (lugar exacto,
-          hora aproximada y fotos), más fácil será revisarlo.
-        </p>
-
-        <!-- Aviso anonimo -->
-        <div class="aviso-anonimo" role="note">
-          <strong>Importante:</strong> Puedes enviar la denuncia de forma
-          anónima. Si no quieres identificarte, deja <strong>Nombre</strong> y
-          <strong>Correo</strong> en blanco.
-        </div>
-
-        <form action="#" method="post" enctype="multipart/form-data">
-          <label for="nombre">Nombre (opcional):</label>
-          <input type="text" id="nombre" name="nombre" />
-
-          <label for="email">Correo electrónico (opcional):</label>
-          <input type="email" id="email" name="email" />
-
-          <label for="zona">Barrio o zona afectada:</label>
-          <select id="zona" name="zona" required>
-            <option value="">Selecciona una opción</option>
-
-            <optgroup label="Districte 1">
-              <option>Centre</option>
-              <option>Progrés</option>
-              <option>Dalt de la Vila</option>
-              <option>Canyadó</option>
-              <option>Casagemes</option>
-              <option>Coll i Pujol</option>
-              <option>Manresà</option>
-            </optgroup>
-
-            <optgroup label="Districte 2">
-              <option>Sant Crist</option>
-              <option>Sistrells</option>
-              <option>Lloreda</option>
-              <option>Nova Lloreda</option>
-              <option>Puigfred</option>
-              <option>La Pau</option>
-              <option>Montigalà</option>
-            </optgroup>
-
-            <optgroup label="Districte 4">
-              <option>La Salut</option>
-              <option>Sant Antoni de Llefià</option>
-              <option>Sant Joan de Llefià</option>
-              <option>Sant Mori de Llefià</option>
-            </optgroup>
-
-            <optgroup label="Districte 5">
-              <option>Gorg</option>
-              <option>La Mora</option>
-              <option>Congrés</option>
-              <option>Can Claris</option>
-              <option>Raval</option>
-            </optgroup>
-
-            <optgroup label="Districte 6">
-              <option>Artigues</option>
-              <option>Sant Roc</option>
-              <option>El Remei</option>
-            </optgroup>
-
-            <option>Otra zona / No lo sé</option>
-          </select>
-
-          <label for="mensaje">Descripción de la incidencia:</label>
-          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-          <label for="archivo">Adjuntar imagen o archivo:</label>
-          <input type="file" id="archivo" name="archivo" />
-
-          <input type="submit" value="Enviar denuncia" />
-        </form>
-      </section>
-    </main>
-
-    <!-- PIE DE PÁGINA -->
-    <footer>
       <p>
-        <a href="https://www.badalona.cat" target="_blank">
-          &copy; 2026 Ayuntamiento de Badalona
-        </a>
+        Para consultas sobre residuos, limpieza, espacios verdes o incidencias
+        ambientales, puedes contactar con el Ayuntamiento o enviar una
+        comunicación mediante el formulario.
       </p>
-    </footer>
 
-    <!-- BOTÓN VOLVER ARRIBA -->
-    <a class="to-top" href="#top" aria-label="Volver arriba">↑</a>
-  </body>
+      <!-- Tabla vertical -->
+      <table>
+        <tr>
+          <th>Entidad</th>
+          <td>Ajuntament de Badalona</td>
+        </tr>
+        <tr>
+          <th>Teléfono</th>
+          <td>934 832 600</td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td>mediambient@badalona.cat</td>
+        </tr>
+        <tr>
+          <th>Dirección</th>
+          <td>Plaça de la Vila, 1 - Badalona</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- HORARIO  -->
+    <section>
+      <h2>Horario de atención</h2>
+
+      <table>
+        <tr>
+          <th>Día</th>
+          <th>Horario</th>
+        </tr>
+        <tr>
+          <td>Lunes a Viernes</td>
+          <td>09:00 - 14:00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- MAPA -->
+    <section>
+      <h2>Ubicación del Ayuntamiento</h2>
+
+      <p>
+        Atención presencial en el edificio municipal de la Plaça de la Vila.
+      </p>
+
+      <iframe title="Mapa del Ajuntament de Badalona"
+        src="https://www.google.com/maps?q=Ajuntament+de+Badalona&output=embed" width="100%" height="300"
+        style="border: 0" allowfullscreen loading="lazy">
+      </iframe>
+    </section>
+
+    <!-- FORMULARIO DE DENUNCIAS -->
+    <section id="denuncias">
+      <h2>Formulario de denuncia ambiental</h2>
+
+      <p>
+        Usa este formulario para informar de incidencias como vertidos,
+        acumulación de residuos, quema incontrolada, daños en zonas verdes o
+        molestias ambientales. Cuanta más información aportes (lugar exacto,
+        hora aproximada y fotos), más fácil será revisarlo.
+      </p>
+
+      <!-- Aviso anonimo -->
+      <div class="aviso-anonimo" role="note">
+        <strong>Importante:</strong> Puedes enviar la denuncia de forma
+        anónima. Si no quieres identificarte, deja <strong>Nombre</strong> y
+        <strong>Correo</strong> en blanco.
+      </div>
+
+      <form id="form-denuncia" action="#" method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre (opcional):</label>
+        <input type="text" id="nombre" name="nombre" />
+
+        <label for="email">Correo electrónico (opcional):</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="zona">Barrio o zona afectada:</label>
+        <select id="zona" name="zona" required>
+          <option value="">Selecciona una opción</option>
+
+          <optgroup label="Districte 1">
+            <option>Centre</option>
+            <option>Progrés</option>
+            <option>Dalt de la Vila</option>
+            <option>Canyadó</option>
+            <option>Casagemes</option>
+            <option>Coll i Pujol</option>
+            <option>Manresà</option>
+          </optgroup>
+
+          <optgroup label="Districte 2">
+            <option>Sant Crist</option>
+            <option>Sistrells</option>
+            <option>Lloreda</option>
+            <option>Nova Lloreda</option>
+            <option>Puigfred</option>
+            <option>La Pau</option>
+            <option>Montigalà</option>
+          </optgroup>
+
+          <optgroup label="Districte 4">
+            <option>La Salut</option>
+            <option>Sant Antoni de Llefià</option>
+            <option>Sant Joan de Llefià</option>
+            <option>Sant Mori de Llefià</option>
+          </optgroup>
+
+          <optgroup label="Districte 5">
+            <option>Gorg</option>
+            <option>La Mora</option>
+            <option>Congrés</option>
+            <option>Can Claris</option>
+            <option>Raval</option>
+          </optgroup>
+
+          <optgroup label="Districte 6">
+            <option>Artigues</option>
+            <option>Sant Roc</option>
+            <option>El Remei</option>
+          </optgroup>
+
+          <option>Otra zona / No lo sé</option>
+        </select>
+
+        <label for="mensaje">Descripción de la incidencia:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <label for="archivo">Adjuntar imagen o archivo:</label>
+        <input type="file" id="archivo" name="archivo" />
+
+        <input type="submit" value="Enviar denuncia" />
+      </form>
+      <div id="confirmacion-envio" class="aviso-anonimo" style="display:none;">
+        <strong>Denuncia enviada correctamente.</strong><br>
+        Gracias por colaborar por una Badalona más limpia y sostenible 🌱
+      </div>
+
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>
+      <a href="https://www.badalona.cat" target="_blank">
+        &copy; 2026 Ayuntamiento de Badalona
+      </a>
+    </p>
+  </footer>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <a class="to-top" href="#top" aria-label="Volver arriba">↑</a>
+
+  <script>
+    const form = document.getElementById('form-denuncia');
+    const confirmacion = document.getElementById('confirmacion-envio');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();          // evita que la página se recargue
+      confirmacion.style.display = 'block';
+      form.reset();                // opcional: limpia el formulario
+    });
+  </script>
+
+</body>
+
 </html>
