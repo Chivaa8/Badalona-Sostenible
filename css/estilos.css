@@ -547,9 +547,17 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header (menú): nunca subrayar enlaces */
+/* Header: nunca subrayar enlaces */
 nav a:hover,
 nav a:focus {
   text-decoration: none;
 }
 
+/* Flecha subir arriba: nunca subrayar ni cambiar estilo */
+.to-top,
+.to-top:visited,
+.to-top:hover,
+.to-top:focus{
+  text-decoration: none;
+  color: white;
+}
